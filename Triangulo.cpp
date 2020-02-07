@@ -2,6 +2,7 @@
 #include <iostream>
 #include <math.h>
 
+
 Triangulo::Triangulo(){
 }
 
@@ -13,9 +14,10 @@ Triangulo::Triangulo(double a, double b, double c){
 }
 
 double Triangulo::Heron(){
-	int s = (l1 + l2 + l3)/2;
-	int area =sqrt(s * (s - l1) * (s - l2) * (s - l3));
-	int altura = (2 * area)/l2;
+	double s = (l1 + l2 + l3)/2;
+	double area = (s * (s - l1) * (s - l2) * (s - l3));
+	area = sqrt(area);
+	double altura = (2 * area)/l2;
 	return altura;
 }
 
