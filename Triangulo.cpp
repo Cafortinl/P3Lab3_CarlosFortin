@@ -9,12 +9,14 @@ Triangulo::Triangulo(double a, double b, double c){
 	l1 = a;
 	l2 = b;
 	l3 = c;
+	h = Heron();
 }
 
-Triangulo::Heron(){
+double Triangulo::Heron(){
 	int s = (l1 + l2 + l3)/2;
-	int area =squrt(s * (s - l1) * (s - l2) * (s - l3));
-	h = (2 * area)/l2;
+	int area =sqrt(s * (s - l1) * (s - l2) * (s - l3));
+	int altura = (2 * area)/l2;
+	return altura;
 }
 
 void Triangulo::setL1(double l){
@@ -39,6 +41,14 @@ void Triangulo::setL3(double l){
 
 double Triangulo::getL3(){
         return l3;
+}
+
+void Triangulo::setAltura(double ht){
+	h = ht;
+}
+
+double Triangulo::getAltura(){
+	return h;
 }
 
 double Triangulo::getArea(){

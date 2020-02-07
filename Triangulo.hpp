@@ -1,4 +1,4 @@
-#pragma once
+//#pragma once
 #ifndef TRIANGULO_HPP
 #define TRIANGULO_HPP
 
@@ -15,6 +15,8 @@ class Triangulo{
 		double getL2();
 		void setL3(double l);
 		double getL3();
+		void setAltura(double ht);
+		double getAltura();
 		double getArea();
 };
 #endif

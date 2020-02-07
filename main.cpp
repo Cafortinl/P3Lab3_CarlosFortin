@@ -1,7 +1,9 @@
 #include <iostream>
+#include "Triangulo.hpp"
 
 using namespace std;
 
+double a, b, c, r;
 int numTriangular(int m){
 	int t=0;
 	for(int i=1;i<=m;i++){
@@ -34,7 +36,8 @@ void opciones(int opcion){
 		       }
 
 		case 2:{
-
+			       Triangulo t(a,b,c);
+			       cout << "El area del triangulo es: " << t.getArea() << endl;
 			       break;
 		       }
 
@@ -64,6 +67,14 @@ void opciones(int opcion){
 
 int main(){
 	int opcion=1;
+	cout << "Ingrese el primer lado del triangulo: ";
+        cin >> a;
+        cout << "Ingrese el segundo lado del triangulo: ";
+        cin >> b;
+        cout << "Ingrese el tercer lado del triangulo: ";
+        cin >> c;
+	cout << "Ingrese el radio del circulo: ";
+	cin >> r;
 	while(opcion != 0){
 		mostrarOpciones();
 		cin >> opcion;
