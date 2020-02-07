@@ -4,9 +4,9 @@ using namespace std;
 
 int numTriangular(int m){
 	int t=0;
-	for(int i=1;i<m;i++){
-		//cout<<i<<endl;
-		t+=i;	
+	for(int i=1;i<=m;i++){
+		if((t + i)<=m)
+			t+=i;	
 	}
 	return t;
 }
@@ -34,6 +34,7 @@ void opciones(int opcion){
 		       }
 
 		case 2:{
+
 			       break;
 		       }
 
