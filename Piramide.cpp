@@ -1,5 +1,6 @@
 #include "Piramide.hpp"
 #include "Triangulo.hpp"
+#include <math.h>
 
 Piramide::Piramide(){
 }
@@ -26,5 +27,5 @@ double Piramide::getH(){
 }
 
 double Piramide::getVolumen(){
-	return (t.getL2() * h)/3;
+	return (pow(t.getL2(),2) * h)/3;
 }
