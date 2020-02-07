@@ -6,11 +6,11 @@ class Circulo{
 	private:
 		double r, d, c;
 		float pi = 3.14159265359;
-		void calcDiam();
-		void calcCircum();
+		double calcDiam();
+		double calcCircum();
 	public:
 		Circulo();
-		Circulo(int x);
+		Circulo(double x);
 		void setR(double x);
 		double getR();
 		void setD(double x);

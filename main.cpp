@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Triangulo.hpp"
+#include "Circulo.hpp"
 
 using namespace std;
 
@@ -42,6 +43,8 @@ void opciones(int opcion){
 		       }
 
 		case 3:{
+			       Circulo cir(r);
+			       cout << "El area del circulo es: " << cir.getArea() << endl;
 			       break;
 		       }
 
